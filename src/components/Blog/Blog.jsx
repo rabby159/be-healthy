@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 import { FcBookmark } from 'react-icons/fc';
 
-const Blog = ({blog}) => {
-    console.log(blog)
+const Blog = ({blog, handleBookmarks, handleReadingTime}) => {
+    // console.log(blog)
     const {id, cover_img, author_name, publish_date, reading_time, short_description, title, hashtags, author_img} = blog;
     return (
         <div className="mb-20">
@@ -18,7 +18,7 @@ const Blog = ({blog}) => {
                     </div>
                     <div className='flex gap-3'>
                         <p>{reading_time} min</p>
-                        <button className='text-2xl'> <FcBookmark></FcBookmark></button>
+                        <button className='text-2xl' onClick={()=> handleBookmarks(blog)}> <FcBookmark></FcBookmark></button>
                     </div>
                 </div>
                 <h2 className='text-3xl font-semibold'>{title}</h2>
@@ -28,7 +28,7 @@ const Blog = ({blog}) => {
                         hashtags.map((hash, idx) => <span className='text-blue-500' key={idx}> #{hash}</span>)
                     }
                 </p>
-                <button className='text-violet-700 font-semibold underline'>Mark As a Read</button>
+                <button className='text-violet-700 font-semibold underline' onClick={() => handleReadingTime(id, reading_time)}>Mark As a Read</button>
             </div>
         </div>
     );

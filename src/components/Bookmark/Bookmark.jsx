@@ -1,9 +1,11 @@
+/* eslint-disable react/prop-types */
 
 
-const Bookmark = () => {
+const Bookmark = ({bookmark}) => {
+
     return (
-        <div>
-            
+        <div className="mt-8 bg-white rounded p-3">
+             <h2>{bookmark.title}</h2>
         </div>
     );
 };
