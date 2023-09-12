@@ -1,0 +1,58 @@
+[
+    {
+      "id": 1,
+      "cover_img": "https://example.com/book1_cover.jpg",
+      "author_name": "John Doe",
+      "author_img": "https://example.com/john_doe.jpg",
+      "publish_date": "2023-09-13",
+      "reading_time": 2,
+      "short_description": "A gripping medical mystery novel set in a small town.",
+      "title": "The Medical Secrets of Willowbrook",
+      "hashtags": ["medical", "mystery"]
+    },
+    {
+      "id": 2,
+      "cover_img": "https://example.com/book2_cover.jpg",
+      "author_name": "Jane Smith",
+      "author_img": "https://example.com/jane_smith.jpg",
+      "publish_date": "2023-08-25",
+      "reading_time": 1.5,
+      "short_description": "A heartwarming medical story of friendship and adventure.",
+      "title": "The Medical Quest for Friendship",
+      "hashtags": ["medical", "friendship"]
+    },
+    {
+      "id": 3,
+      "cover_img": "https://example.com/book3_cover.jpg",
+      "author_name": "Emily Johnson",
+      "author_img": "https://example.com/emily_johnson.jpg",
+      "publish_date": "2023-07-10",
+      "reading_time": 3,
+      "short_description": "An inspirational medical memoir of overcoming challenges.",
+      "title": "Unbroken Medical Spirit",
+      "hashtags": ["medical", "memoir"]
+    },
+    {
+      "id": 4,
+      "cover_img": "https://example.com/book4_cover.jpg",
+      "author_name": "Michael Brown",
+      "author_img": "https://example.com/michael_brown.jpg",
+      "publish_date": "2023-06-05",
+      "reading_time": 2.5,
+      "short_description": "A medical science fiction adventure in a distant galaxy.",
+      "title": "Medical Galactic Odyssey",
+      "hashtags": ["medical", "scifi"]
+    },
+    {
+      "id": 5,
+      "cover_img": "https://example.com/book5_cover.jpg",
+      "author_name": "Sarah Anderson",
+      "author_img": "https://example.com/sarah_anderson.jpg",
+      "publish_date": "2023-05-20",
+      "reading_time": 1.8,
+      "short_description": "A culinary journey through exotic cuisines.",
+      "title": "Culinary Escapades",
+      "hashtags": ["foodie", "travel"]
+    }
+  ]
+  
