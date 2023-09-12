@@ -1,4 +1,6 @@
 import './App.css'
+import Blogs from './components/Blogs/Blogs'
+import Bookmarks from './components/Bookmarks/Bookmarks'
 import Header from './components/Header/Header'
 
 function App() {
@@ -6,6 +8,10 @@ function App() {
   return (
     <>
       <Header></Header>
+      <div className='md:flex justify-between container mx-auto gap-8'>
+        <Blogs></Blogs>
+        <Bookmarks></Bookmarks>
+      </div>
     </>
   )
 }
