@@ -2,15 +2,21 @@ import { useState } from 'react'
 import './App.css'
 import Blogs from './components/Blogs/Blogs'
 import Bookmarks from './components/Bookmarks/Bookmarks'
-import Header from './components/Header/Header'
+import Header from './components/Header/Header';
 
 function App() {
   const [bookmarks, setBookmarks] = useState([]);
   const [readingTime, setReadingTime] =useState(0)
 
   const handleBookmarks = blog => {
-    const newBookmarks = [...bookmarks, blog]
-    setBookmarks(newBookmarks);
+    const isExist = bookmarks.find((item) => item.id === blog.id);
+    if(isExist){
+      alert('Already added this blog')
+    }
+    else{
+      const newBookmarks = [...bookmarks, blog]
+      setBookmarks(newBookmarks);
+    }
   }
 
   const handleReadingTime = (id, time) => {
